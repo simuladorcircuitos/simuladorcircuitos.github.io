@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <link rel="icon" href="icon/favico.svg" type="image/svg+xml" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Simulador Compuertas Logicas</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css" type="text/css" media="screen" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/estilos.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+    </div>
+    <header>
+        <div class="navbar red darken-4">
+            <div class="nav-wrapper">
+                <img class="navbar__logo" src="icon/favico.svg" alt="Jirtdan - logo">
+                <h4 class="navbar__title">Simulador de Compuertas Logicas</h4>
+            </div>
+        </div>
+    </header>
+    <div class="row" style="margin-bottom: -5px !important;">
+        <div class="col s4"></div>
+        <div class="col s8">
+            <ul class="tabs">
+                <li class="tab col s3"><a class="red-text text-darken-4" href="#test1">Simulador</a></li>
+                <li class="tab col s3"><a class="red-text text-darken-4" class="active" href="#test2">Instrucciones</a></li>
+                <li class="tab col s3"><a class="red-text text-darken-4" class="active" href="#test3">Tabla De Verdad</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <main class="row" id="test1">
+        <div class="col s12" id="board" style="background-color: #ecf0f1;"></div>
+    </main>
+
+
+    <div id="test2" class="col s12">
+            <div class="container">
+            <center><h2 class="red-text text-darken-3">Instrucciones</h2></center>
+            <h4>1.   Click en algun icono del menu inferior <b class="red-text text-darken-4">para usar</b>. </h4>
+            <h4>2.   Mantén click presionado sobre el ícono manifestado <b class="red-text text-darken-4">para mover de posición</b>. </h4>
+            <h4>3.   Presiona click en el circulo de entrada y luego click en el circulo de salida del otro componente <b class="red-text text-darken-4">para enlazar</b>.<h4>
+            <h4>4.   Click sobre el SWITCH para <b class="red-text text-darken-4">activar/desactivar el paso de corriente.</b></h4>
+            <h4>5.   Usa Elimnar o el Boton Supr luego de seleccionar,<b class="red-text text-darken-4"> Para desaparecer un componente.</b></h4>
+            <h4>6.   Reestablecer <b class="red-text text-darken-4">para deseleccionar.</b></h4>
+            <center><h3 class="red-text text-darken-4">¡Diviertete!</h3></center>
+        </div>
+    </div>
+
+    <div id="test3" class="col s12">
+        
+       <center><img id="tablaverdad" src="icon/puertas-logicas.png" alt =" FUNCIONES LOGICAS BASICAS"></center> 
+
+
+
+    </div>
+    <div class="navbar-fixed">
+        <nav class="navbar-down">
+
+            <div class="nav-wrapper yellow darken-3">
+
+                <ul class="center hide-on-med-and-down row ">
+                    <li> <a id="btn-add-and" class="tooltipped" data-position="top" data-tooltip="AND"><img class="icon-margin" src="icon/AND.svg" height="45" width="90"></a></li>
+
+                    <li> <a id="btn-add-or" class="tooltipped" data-position="top" data-tooltip="OR"><img class="icon-margin" src="icon/OR.svg" height="45" width="90"></a></li>
+                        
+                    <li> <a id="btn-add-xor" class="tooltipped" data-position="top" data-tooltip="XOR"><img class="icon-margin" src="icon/XOR.png" height="45" width="90"></a></li>
+
+                    <li><a id="btn-add-not" class="tooltipped" data-position="top" data-tooltip="NOT"><img class="icon-margin" src="icon/NOT.svg" height="45" width="90"></a></li>
+
+                     <li> <a id="btn-add-nand" class="tooltipped" data-position="top" data-tooltip="NAND"><img class="icon-margin" src="icon/NAND.png" height="45" width="90"></a></li>    
+
+                    <li> <a id="btn-add-nor" class="tooltipped" data-position="top" data-tooltip="NOR"><img class="icon-margin" src="icon/NOR.png" height="45" width="90"></a></li>
+
+
+
+                    <li> <a id="btn-add-bulb" class="tooltipped" data-position="top" data-tooltip="Led"><img class="icon-margin" src="icon/BULB.svg" height="45" width="45"></a></li>
+
+                    <li> <a id="btn-add-switch" class="tooltipped" data-position="top" data-tooltip="Switch"><img class="icon-margin" src="icon/SWITCH.svg" height="45" width="45"></a></li>
+
+                    <ul class="right hide-on-med-and-down row ">
+                        <li> <a class="red btn btn--danger btn-large" id="btn-delete">ELIMINAR</a></li>
+                        <li> <a class="blue btn btn--default btn-large" id="btn-unselect">REESTABLECER</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+        <footer class="page-footer red darken-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Simulador Compuertas Logicas</h5>
+                        <p class="grey-text text-lighten-4">Proyecto creado con fines academicos para facilitar el aprendizaje de la tematica de compuertas logicas</p>
+    
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Tecnologias</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" > Simulador en javascript</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Materialize</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">JQuery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2018 Copyright Derechos reservados
+                    <a class="grey-text text-lighten-4 right" href="https://www.facebook.com/millermemi">-Miller de Jesus</a>
+                    <a class="grey-text text-lighten-4 right">Ivan de la rosa</a>
+                
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+        <script src="third_party/raphael/raphael.js"></script>
+        <script src="compiled/bundle.js"></script>
+        <script src="js/logica.js"></script>
+</body>
+
+</html>
